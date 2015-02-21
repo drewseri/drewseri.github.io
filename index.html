@@ -2,10 +2,37 @@
 <head>
 <title>TC 362 - Eric Drews</title>
 <link rel="stylesheet" type="text/css" href="css/style.css">
+
+<script>
+function showHide(id) {
+	if(document.getElementById(id).style.display == "none")
+	{
+		document.getElementById(id).style.display = "block";
+	}
+	else
+	{
+		document.getElementById(id).style.display = "none"
+	}
+}
+</script>
+
 </head>
 <body>
 <h1 align="center">TC 362 GitHub Page</h1><hr />
 
+<h2>Welcome to the Official GitHub Page of Eric Drews!</h2>
+<h3>Quick Links</h3>
+<ul>
+<li><h5><a href="docs/syllabus.pdf" target="_blank">TC 362 Course Syllabus</a></h5></li>
+<li><h5><a href="http://msu.edu/~drewseri" target="_blank">My Personal MSU Website</a></h5></li>
+</ul>
+
+<h3>Assignments</h3>
+<ul>
+<li><h5><a href="javascript:;" onclick="showHide('paper')">Week 5/6 Research Paper</a></h5></li>
+
+<div id="paper" style="display:none;">
+<h4 align="center">Technology Stack Research Paper</h4>
 <p>
 Since 2011, I have been a student programmer for the Residential and Hospitality Services (RHS) 
 division here at Michigan State University. RHS is responsible for the development and 
@@ -13,7 +40,8 @@ maintenance of a number of websites here at MSU, including LiveOn, EatAtState, a
 and many others. I have had the chance to learn how to develop web pages that
 are backed up by a database, as well as designing how these web pages look. As an experienced 
 student programmer, I have a good understanding of the hardware and software solutions RHS utilizes 
-to keep their websites up and running.</p>
+to keep their websites up and running.
+</p>
 
 <p>
 RHS uses a three-tier deployment system for the structure of their servers. There is a DEV level, 
@@ -24,17 +52,25 @@ and not functional. The QA level has functional websites that are accessible fro
 Once a project on DEV is ready for testing, it is promoted to QA. The PRODUCTION layer is
 accessible from any access point, and is kept in working order. PRODUCTION and QA are often kept
 in sync, so that quick fixes and enhancements can be pushed up to PRODUCTION without the worry
-of overwriting functionality that is only in PRODUCTION.</p>
+of overwriting functionality that is only in PRODUCTION.
+</p>
 
-<p>As previously stated, there are three levels of servers with two servers at each level. The 
+<p>
+As previously stated, there are three levels of servers with two servers at each level. The 
 web servers are Intel(R) Xeon(R) CPU E5-2660 servers with a cpu speed of 2.20GHz. The servers
 have Linux 2.6 (specifically, Red Hat 4.4) installed on them, along with 32 gigabytes of RAM.
 To host the websites, these servers utilize Apache 2.2. The database servers are also Intel(R) Xeon(R) CPU E5-2660
 servers with a cpu speed of 2.20GHz. They have Linux 2.6 (specifically, Red Hat 4.4) installed on them
-with 8 gigabytes of RAM. To support the databases needed, PostgreSQL 8.4 is installed on each of the database servers.</p>
+with 8 gigabytes of RAM. To support the databases needed, PostgreSQL 8.4 is installed on each of the database servers.
+</p>
 
+<p>
+These six servers are all password protected, and access to any file on these servers requires 
+the user to be apart of our development linux group.
+</p>
+</div>
 
-
+<br /><br /><br />
 
 </body>
 </html>

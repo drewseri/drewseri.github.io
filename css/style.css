@@ -1,11 +1,31 @@
 html {
-	background-color: #333333;
-	font-family: arial, sans-serif;
+	background-color: #1c453b;
+	font-family: verdana, arial, sans-serif;
+	color: white;
+	background-image: url("../images/spartanhelm.png");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+    background-position: 50px;
 }
 
 body {
-	background-color: white;
+	margin-top: 0px;
+	background:rgba(0,0,0,0.8);
 	width: 750px;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+div#paper {
+	margin-right: 30px;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #CCCCCC;
+	text-decoration: underline;
 }
